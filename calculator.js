@@ -394,10 +394,10 @@ btnbackspace.addEventListener('click', functieBackspace);
 window.addEventListener('keydown', function(e){ 
     if(e.keyCode === 191){functieDivide();}
     if(e.keyCode === 88){functieMultiply();}
-    if(e.keyCode === 187){functiePlus();}
+    if(e.keyCode === 187 && e.shiftKey == false){functiePlus();}
     if(e.keyCode === 189){functieMinus();}
     if(e.keyCode === 8){functieBackspace();}
-    if(e.keyCode === 13){/*plus*/functieAnswer();}
+    if(e.keyCode === 187 && e.shiftKey == true){functieAnswer();}
     if(e.keyCode === 190){functieDot();}
     if(e.keyCode === 46){functieClear();}
     if(e.keyCode === 49){functieNummer(1);}
@@ -410,4 +410,6 @@ window.addEventListener('keydown', function(e){
     if(e.keyCode === 56){functieNummer(8);}
     if(e.keyCode === 57){functieNummer(9);}
     if(e.keyCode === 48){functieNummer(0);}
+    /*waarom wordt er het laatste nummer toegevoegd wat je in de rekenmachine hebt gezet 
+    als je op enter drukt? Ik heb nergens meer staan dat ik de enter key aanroep?*/
 }); 

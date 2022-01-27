@@ -397,7 +397,7 @@ window.addEventListener('keydown', function(e){
     if(e.keyCode === 187){functiePlus();}
     if(e.keyCode === 189){functieMinus();}
     if(e.keyCode === 8){functieBackspace();}
-    if(e.keyCode === 13){/*plus*/functieAnswer();}
+    if(e.keyCode === 13){functieAnswer();}
     if(e.keyCode === 190){functieDot();}
     if(e.keyCode === 46){functieClear();}
     if(e.keyCode === 49){functieNummer(1);}

@@ -26,7 +26,7 @@ operate = function(a, operand, b){
     } 
     if(operand === '/'){
         if(b === 0){
-            alert('waarde van variabele b = ' + b +'. Je kunt niet delen door 0 ben je dom ofzo'); 
+            alert('Je kunt niet delen door 0'); 
             a = ''; 
             b= ''; 
             operand = ''; 
@@ -314,7 +314,6 @@ const functieAnswer = () =>{ /*answer*/
     a = Number(a); 
     if(b === ''){
         display.innerHTML = display.innerHTML 
-        alert('hallo' + 'waarde operand:' + operand + '. waarde c: ' +c + '. waarde de: ' + d); 
         /*waarom moet dit statement eerst en kan niet het andere statement eerst? 
         als het andere statement altijd eerst gaat, dan */
         a = a.toString();

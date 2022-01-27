@@ -1,0 +1,120 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    background-color: white; 
+}
+
+.container{ 
+    margin: 20px auto; 
+    border: 1px solid rgb(224, 213, 213); 
+    min-width: 100px;
+    max-width: 550px; 
+    height: auto;  
+    background-color: rgb(224, 213, 213); 
+    
+}
+.rekenmachine{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: repeat(6, 75px);
+    grid-gap: 15px; 
+    margin: 10px; 
+    background-color: rgb(224, 213, 213); 
+    min-width: 100px;
+    
+      
+}
+
+button{
+    font-size: 22px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btndelete{
+    font-size: 18px; 
+}
+#display{
+    font-size: 35px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+
+/*rij1*/
+#display{
+    border: 2px solid black; 
+    grid-row: 1; 
+    grid-column: 1/5; 
+    border: none; 
+}
+/*rij2*/
+.btn{
+    cursor: pointer; 
+    border-radius: 10px; 
+    border: none; 
+}
+.btnclear, .btndelete, .btndelendoor{
+    grid-row: 2; 
+}
+.btnclear{
+    grid-column: 1/3;
+    grid-row: 2; 
+    grid-gap: 10px; 
+    background-color: yellow; 
+}
+.btndelete{
+    background-color: red; 
+    grid-column: 3/4; 
+}
+.btndelendoor{
+    grid-column: 4/5;  
+}
+/*rij3*/
+.btnseven, .btneight, .btnnine, .btnmultiply{
+    grid-row: 3; 
+}
+/*rij4*/
+.btnfour, .btnfive, .btnsix, .btnminus{
+    grid-row: 4; 
+}
+/*rij5*/
+.btnone, .btntwo, .btnthree, .btnplus{
+    grid-row: 5; 
+}
+/*rij6*/
+.btnadddecimal, .btnzero, .btnoperator{
+    grid-row: 6; 
+}
+.btnoperator{
+    grid-column: 3/5; 
+}
+
+/*hover effecten buttons: */
+button:hover{
+    background-color: lightseagreen; 
+}
+.btnclear:hover{
+    background-color: yellow; 
+}
+.btndelete:hover{
+    background-color: red; 
+}
+
+
+
+/*
+.sidebaritem1{
+    display: grid; 
+    grid-template-columns: 2fr; 
+    grid-template-rows: 2fr; 
+}
+.picturecontainer{
+    grid-column: 1/3; 
+    grid-row: 1;
+    margin: 16px; 
+}
+*/
+
+/*Buttons*/
+
+
+

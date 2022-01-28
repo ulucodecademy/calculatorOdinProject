@@ -61,12 +61,15 @@ const functieNummer = function(number){
     if(display.innerHTML === '0' && operand !== '+' &&operand !== '-' &&operand !=='/' &&operand !=='*'){
         a = a+number; 
         display.innerHTML = number.toString();  
+        
     } else if(display.innerHTML !== '0' && operand ===''){
         a = a+number; 
         display.innerHTML = display.innerHTML + number.toString(); 
+        if(display.innerHTML.length>25) display.innerHTML = display.innerHTML.substring(0, 25); //display max 25 stringtekens
     } else if(display.innerHTML !== '0' && operand === '+' || operand ==='-' ||operand==='/' ||operand ==='*'){
         b = b+number; 
         display.innerHTML = display.innerHTML + number.toString(); 
+        if(display.innerHTML.length>25) display.innerHTML = display.innerHTML.substring(0, 25); //display max 25 stringtekens
     }
 }
 
